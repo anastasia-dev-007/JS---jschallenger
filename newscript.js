@@ -2,7 +2,7 @@
 // This challenge is a little bit more complex. Write a function that takes a number (a) as argument. If a is prime, return a. If not, return the next higher prime number.
 
 const findNextPrime = (a) => {
-    const isPrime = (n) => {
+    const isPrime = (n) =>{
         if (n <= 1) return false;
 
         for(let i = 2; i <= Math.sqrt(n); i++) {
@@ -12,7 +12,6 @@ const findNextPrime = (a) => {
     }
 
     let nextNumber = a + 1;
-
     while (true) {
         if(isPrime(nextNumber)) {
             return nextNumber;
